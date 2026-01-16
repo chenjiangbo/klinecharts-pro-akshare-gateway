@@ -130,6 +130,11 @@ const chart = new KLineChartPro({
 - **重启后会重新拉取数据**：默认使用内存缓存；可开启 Redis 或在应用侧做持久化。
 - **分钟历史返回空**：AKShare 数据可用性受限，会自动回退到最近交易日重试。
 
+## 自定义 Provider 模板
+如果你希望使用自有数据源，请实现 `MarketDataProvider` 接口。示例模板见：
+
+- `packages/backend/klinecharts_pro_akshare_gateway/provider/custom_example.py`
+
 ## Demo（可选）
 ```bash
 cd examples/web-demo
