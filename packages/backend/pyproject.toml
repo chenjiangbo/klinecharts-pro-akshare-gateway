@@ -2,6 +2,7 @@
 name = "klinecharts-pro-akshare-gateway"
 version = "0.1.0"
 description = "Market data gateway for KLineChart Pro using AKShare"
+readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
   "fastapi>=0.111",
