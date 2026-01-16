@@ -1,0 +1,20 @@
+[project]
+name = "klinecharts-pro-akshare-gateway-backend"
+version = "0.1.0"
+description = "Market data gateway for KLineChart Pro using AKShare"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi>=0.111",
+  "uvicorn[standard]>=0.30",
+  "pydantic>=2.7",
+  "pydantic-settings>=2.3",
+  "anyio>=4.0",
+]
+
+[project.optional-dependencies]
+akshare = ["akshare"]
+redis = ["redis>=5.0"]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
