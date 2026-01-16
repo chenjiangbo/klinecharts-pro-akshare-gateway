@@ -10,10 +10,10 @@ dependencies = [
   "pydantic>=2.7",
   "pydantic-settings>=2.3",
   "anyio>=4.0",
-  "akshare",
 ]
 
 [project.optional-dependencies]
+akshare = ["akshare"]
 redis = ["redis>=5.0"]
 
 [project.scripts]

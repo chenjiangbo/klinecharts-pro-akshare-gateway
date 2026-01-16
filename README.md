@@ -1,6 +1,6 @@
 # KLineChart Pro + AKShare Gateway
 
-面向第三方应用的行情网关组件：后端统一对接 AKShare，前端提供 KLineChart Pro datafeed 适配器。你只需启动网关并引入 datafeed，即可在自己的应用里使用 KLineChart Pro，而无需自行对接 AKShare。
+面向第三方应用的行情网关组件：后端提供统一数据接口与 WS 推送，内置 AKShare Provider（可选依赖），前端提供 KLineChart Pro datafeed 适配器。你只需启动网关并引入 datafeed，即可在自己的应用里使用 KLineChart Pro。
 
 ## 你能得到什么
 - **后端网关**：历史 K 线 + 实时 WS 推送
@@ -33,7 +33,7 @@ Frontend (KLineChart Pro)
 ### 1) 启动后端网关
 方式 A：PyPI（发布后可用）
 ```bash
-python -m pip install klinecharts-pro-akshare-gateway
+python -m pip install klinecharts-pro-akshare-gateway[akshare]
 klinecharts-pro-akshare-gateway --host 0.0.0.0 --port 8000
 ```
 
@@ -42,6 +42,7 @@ klinecharts-pro-akshare-gateway --host 0.0.0.0 --port 8000
 git clone https://github.com/chenjiangbo/klinecharts-pro-akshare-gateway.git
 cd klinecharts-pro-akshare-gateway
 python -m pip install -e "packages/backend"
+python -m pip install -e "packages/backend[akshare]"
 python -m uvicorn klinecharts_pro_akshare_gateway.main:app --app-dir packages/backend --host 0.0.0.0 --port 8000
 ```
 

@@ -50,6 +50,7 @@
 + Python 3.12+
 + FastAPI 0.111+ + Uvicorn 0.30+
 + Pydantic v2
++ AKShare 作为可选 Provider（默认提供，但可替换）
 + 可选：Redis（默认关闭；本地/单实例用 in-memory；多实例/共享缓存时启用）
 
 ## 3.2 前端
