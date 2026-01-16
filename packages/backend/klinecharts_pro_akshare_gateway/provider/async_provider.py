@@ -4,8 +4,8 @@ from datetime import date, datetime
 
 import anyio
 
-from app.models import Bar, Snapshot, SymbolInfo
-from app.provider.base import MarketDataProvider
+from klinecharts_pro_akshare_gateway.models import Bar, Snapshot, SymbolInfo
+from klinecharts_pro_akshare_gateway.provider.base import MarketDataProvider
 
 
 class AsyncProvider:

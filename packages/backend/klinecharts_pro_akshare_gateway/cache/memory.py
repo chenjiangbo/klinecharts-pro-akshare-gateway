@@ -4,7 +4,7 @@ import time
 from dataclasses import dataclass
 from typing import TypeVar
 
-from app.cache.base import Cache
+from klinecharts_pro_akshare_gateway.cache.base import Cache
 
 T = TypeVar("T")
 

@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import json
 
-from app.cache.base import Cache
+from klinecharts_pro_akshare_gateway.cache.base import Cache
 
 
 class RedisCache(Cache):

@@ -3,15 +3,15 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api.router import router as api_router
-from app.barbuilder.builder import BarBuilder
-from app.cache.memory import MemoryCache
-from app.cache.redis import RedisCache
-from app.config import get_settings
-from app.poller import Poller
-from app.provider.akshare import AkshareConfig, AkshareProvider
-from app.provider.async_provider import AsyncProvider
-from app.ws.routes import router as ws_router
+from klinecharts_pro_akshare_gateway.api.router import router as api_router
+from klinecharts_pro_akshare_gateway.barbuilder.builder import BarBuilder
+from klinecharts_pro_akshare_gateway.cache.memory import MemoryCache
+from klinecharts_pro_akshare_gateway.cache.redis import RedisCache
+from klinecharts_pro_akshare_gateway.config import get_settings
+from klinecharts_pro_akshare_gateway.poller import Poller
+from klinecharts_pro_akshare_gateway.provider.akshare import AkshareConfig, AkshareProvider
+from klinecharts_pro_akshare_gateway.provider.async_provider import AsyncProvider
+from klinecharts_pro_akshare_gateway.ws.routes import router as ws_router
 
 
 @asynccontextmanager

@@ -6,11 +6,11 @@ from dataclasses import dataclass
 from datetime import datetime, time
 from zoneinfo import ZoneInfo
 
-from app.barbuilder.builder import BarBuilder
-from app.config import Settings
-from app.models import BarEvent, StatusEvent
-from app.provider.async_provider import AsyncProvider
-from app.ws.hub import hub
+from klinecharts_pro_akshare_gateway.barbuilder.builder import BarBuilder
+from klinecharts_pro_akshare_gateway.config import Settings
+from klinecharts_pro_akshare_gateway.models import BarEvent, StatusEvent
+from klinecharts_pro_akshare_gateway.provider.async_provider import AsyncProvider
+from klinecharts_pro_akshare_gateway.ws.hub import hub
 
 logger = logging.getLogger(__name__)
 

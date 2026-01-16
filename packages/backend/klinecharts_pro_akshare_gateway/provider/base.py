@@ -3,7 +3,7 @@ from __future__ import annotations
 from datetime import date, datetime
 from typing import Protocol
 
-from app.models import Bar, Snapshot, SymbolInfo
+from klinecharts_pro_akshare_gateway.models import Bar, Snapshot, SymbolInfo
 
 
 class MarketDataProvider(Protocol):

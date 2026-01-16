@@ -6,8 +6,8 @@ from datetime import date, datetime
 import io
 from zoneinfo import ZoneInfo
 
-from app.cache.memory import MemoryCache
-from app.models import Bar, Snapshot, SymbolInfo
+from klinecharts_pro_akshare_gateway.cache.memory import MemoryCache
+from klinecharts_pro_akshare_gateway.models import Bar, Snapshot, SymbolInfo
 
 
 @dataclass

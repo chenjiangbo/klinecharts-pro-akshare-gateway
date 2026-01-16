@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Query, Request
 
-from app.models import SymbolSearchResponse
+from klinecharts_pro_akshare_gateway.models import SymbolSearchResponse
 
 router = APIRouter()
 

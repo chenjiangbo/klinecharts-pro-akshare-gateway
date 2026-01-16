@@ -1,7 +1,7 @@
 from fastapi import APIRouter, WebSocket, WebSocketDisconnect
 
-from app.models import ErrorEvent, SubscribeAck, SubscribeRequest
-from app.ws.hub import hub
+from klinecharts_pro_akshare_gateway.models import ErrorEvent, SubscribeAck, SubscribeRequest
+from klinecharts_pro_akshare_gateway.ws.hub import hub
 
 router = APIRouter()
 

@@ -3,8 +3,8 @@ from zoneinfo import ZoneInfo
 
 from fastapi import APIRouter, HTTPException, Query, Request
 
-from app.models import HistoryResponse
-from app.cache.memory import MemoryCache
+from klinecharts_pro_akshare_gateway.models import HistoryResponse
+from klinecharts_pro_akshare_gateway.cache.memory import MemoryCache
 
 router = APIRouter()
 

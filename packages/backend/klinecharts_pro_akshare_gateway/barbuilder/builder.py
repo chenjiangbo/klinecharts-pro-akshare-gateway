@@ -3,8 +3,8 @@ from __future__ import annotations
 from datetime import datetime, time, timedelta, timezone
 from zoneinfo import ZoneInfo
 
-from app.barbuilder.models import BarState, SymbolState
-from app.models import Bar, Snapshot
+from klinecharts_pro_akshare_gateway.barbuilder.models import BarState, SymbolState
+from klinecharts_pro_akshare_gateway.models import Bar, Snapshot
 
 
 class BarBuilder:

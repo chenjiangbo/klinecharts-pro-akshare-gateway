@@ -418,7 +418,7 @@ AKShare 数据源可能对频繁请求敏感，因此必须：
     - WS 同样校验 token
 
 ## 12.2 部署
-+ 单实例：`uvicorn app:app --host 0.0.0.0 --port 8000`
++ 单实例：`uvicorn klinecharts_pro_akshare_gateway.main:app --host 0.0.0.0 --port 8000`
 + 生产建议：Docker + Gunicorn(UvicornWorker)；Redis 可选（用于多实例共享订阅/缓存）
 + Redis 启用示例（可选）：
     - 配置：`CACHE_BACKEND=redis`，`REDIS_URL=redis://localhost:6379/0`
@@ -434,7 +434,7 @@ klinecharts-pro-akshare-gateway/
 
     backend/                 # FastAPI 网关（核心）
 
-      app/
+      klinecharts_pro_akshare_gateway/
 
         api/                 # REST 路由
 
