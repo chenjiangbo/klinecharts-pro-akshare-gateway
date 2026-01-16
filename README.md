@@ -30,14 +30,17 @@ Frontend (KLineChart Pro)
 
 ## 第三方应用接入步骤
 
-### 1) 启动后端网关（PyPI 方式）
+### 1) 启动后端网关
+方式 A：PyPI（发布后可用）
 ```bash
 python -m pip install klinecharts-pro-akshare-gateway
 klinecharts-pro-akshare-gateway --host 0.0.0.0 --port 8000
 ```
 
-### 1b) 源码方式（本仓库开发/内网）
+方式 B：Clone 源码
 ```bash
+git clone https://github.com/chenjiangbo/klinecharts-pro-akshare-gateway.git
+cd klinecharts-pro-akshare-gateway
 python -m pip install -e "packages/backend"
 python -m uvicorn klinecharts_pro_akshare_gateway.main:app --app-dir packages/backend --host 0.0.0.0 --port 8000
 ```
